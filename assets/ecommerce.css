@@ -1,0 +1,301 @@
+body {
+    background-image: url("https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&ved=0ahUKEwjK86LY4vjTAhUJ5GMKHQ7RC1gQjBwIBA&url=https%3A%2F%2Fimages7.alphacoders.com%2F379%2F379375.jpg&psig=AFQjCNEbn0h2LPgCx4NsdoEzKWXWyhUJTg&ust=1495173825985608");
+    padding-top: 80px;
+}
+
+
+@media (min-width: 992px) {
+    body {
+        padding-top: 56px;
+    }
+}
+
+.business-header {
+    height: 50vh;
+    min-height: 300px;
+    background: url('https://vn.usembassy.gov/wp-content/uploads/sites/40/2015/03/shutterstock_322479275.jpg') center center no-repeat scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+
+h1 {
+    font-family: 'Anton', sans-serif;
+}
+
+.card-title {
+    font-family: 'Anton', sans-serif;
+}
+
+/*
+for the card p
+ */
+.card-text{
+    font-family: 'Macondo', cursive;
+    font-size: 24px;
+}
+
+.list-group-item{
+    font-family: 'Macondo', cursive;
+    font-size: 16px;
+}
+.background {
+
+}
+/*
+centers the image
+ */
+
+.img-center {
+    display: block;
+    margin: 0 auto;
+}
+
+/*
+style the carousel gallery
+ */
+.carousel-inner img {
+    -webkit-filter: grayscale(90%);
+    filter: grayscale(90%); /* make all photos black and white */
+    width: 100%; /* Set width to 100% */
+    margin: auto;
+}
+
+.carousel-caption h3 {
+    color: #fff !important;
+}
+
+@media (max-width: 600px) {
+    .carousel-caption {
+        display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
+    }
+}
+
+.loading {
+    opacity: 0;
+    transition: opacity .8s ease-in-out;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: #000;
+    z-index: -1;
+}
+my-app:empty + .loading {
+    opacity: 1;
+    z-index: 100;
+}
+my-app:empty + .loading h1 {
+    color: #EEE;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    transform: translate(0, -50%);
+}
+
+/*
+centers the image on home page
+ */
+.home-image {
+    display: block;
+    margin: 0 auto;
+}
+
+.home-title {
+    text-align: center;
+}
+
+.home-row {
+    background-color: white;
+}
+
+.home-banner {
+    background-color: gray;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.banner-header{
+    font-family: 'Anton', sans-serif;
+}
+
+.banner-text {
+    font-family: 'Macondo', cursive;
+}
+
+.title-header{
+    background-color: white;
+}
+.text-center {
+    text-align: center;
+}
+
+
+.panel-center {
+    text-align: center;
+}
+
+a:hover { 
+    cursor: pointer; 
+}
+
+.product-menu {
+    height: 50px;
+    margin-top: 22px;
+}
+
+.product-slide-item {
+    margin-bottom: 25px;
+}
+
+.product-item {
+    height: 171px;
+    width: 100%;
+    display: block;
+}
+
+.product-img {
+    height: 300px;
+    width: 100%;
+    display: block;
+}
+
+.marketing {
+    background-color: #f6eee3;
+}
+
+.carousel {
+    margin-bottom: 12px;
+}
+
+.footer {
+    padding-top: 5px;
+    background-color: #f5f5f5;
+}
+
+.card-deck-wrapper .card-deck {
+    width: auto;
+}
+
+.card-deck-wrapper .card-deck .card {
+    width: 261;
+}
+
+@media (max-width: 544px) {
+    .card-deck-wrapper .card-deck {
+        width: 100%;
+    }
+
+    .card-deck-wrapper .card-deck .card {
+        width: 100%;
+    }
+}
+
+.card-deck-wrapper {
+    padding-bottom: 1rem;
+}
+
+.table-cart {
+	text-align: center;
+	width: 100%;
+}
+
+.table-cart tr {
+	border-bottom:1px solid gray;
+}
+
+.table-cart tr td {
+	padding: 4px;
+    vertical-align: middle !important;
+}
+
+.total-cart {
+	margin: 5px;
+}
+
+.btn-cart {
+	margin: 0 5px 5px 0;
+}
+
+.emty-cart {
+	text-align: center;
+}
+/**
+bar graph
+ */
+.bar {
+    fill: steelblue;
+}
+
+.bar:hover {
+    fill: brown;
+}
+
+.axis-title {
+    fill: none;
+    stroke: black;
+    stroke-width: 0.5px;
+}
+.panel-primary {
+    border-color: blue;
+}
+.panel-primary > .panel-heading {
+    border-color: blue;
+    color: white;
+    background-color: blue;
+}
+.panel-primary > a {
+    color: blue;
+}
+.panel-primary > a:hover {
+    color: lightblue;
+}
+
+
+
+.panel-green {
+    border-color: #5cb85c;
+}
+.panel-green > .panel-heading {
+    border-color: #5cb85c;
+    color: white;
+    background-color: #5cb85c;
+}
+.panel-green > a {
+    color: #5cb85c;
+}
+.panel-green > a:hover {
+    color: #3d8b3d;
+}
+.panel-red {
+    border-color: #d9534f;
+}
+.panel-red > .panel-heading {
+    border-color: #d9534f;
+    color: white;
+    background-color: #d9534f;
+}
+.panel-red > a {
+    color: #d9534f;
+}
+.panel-red > a:hover {
+    color: #b52b27;
+}
+.panel-yellow {
+    border-color: #f0ad4e;
+}
+.panel-yellow > .panel-heading {
+    border-color: #f0ad4e;
+    color: white;
+    background-color: #f0ad4e;
+}
+.panel-yellow > a {
+    color: #f0ad4e;
+}
+.panel-yellow > a:hover {
+    color: #df8a13;
+}

@@ -1,0 +1,7 @@
+<div class="card">
+    <div class="card-header">Director Categories</div>
+    <div class="list-group list-group-flush">
+        <a class="list-group-item" *ngFor="let directorcategory of directorcategories"
+           (click)="filterFilms(directorcategory)">{{directorcategory.title}}</a>
+    </div>
+</div>

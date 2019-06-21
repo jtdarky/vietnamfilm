@@ -1,0 +1,28 @@
+<nav class="navbar navbar-fixed-top navbar-dark bg-inverse">
+  <div class="container">
+    <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar">
+      &#9776;
+    </button>
+    <div class="collapse navbar-toggleable-xs" id="exCollapsingNavbar">
+      <a class="navbar-brand" [routerLink]="['/home']">Vietnam Films</a>
+
+      <div class="nav navbar-nav">
+        <a class="nav-item nav-link active" [routerLink]="['/home']">
+          Home <span class="sr-only">(current)</span>
+        </a>
+        <a class="nav-item nav-link"  [routerLink]="['/about']">About</a>
+        <a class="nav-item nav-link"  [routerLink]="['/film']">Film News</a>
+        <a class="nav-item nav-link" [routerLink]="['/directors']">Director</a>
+        <a class="nav-item nav-link"  [routerLink]="['/shop']"  *ngIf="auth.loggedIn()">Shop</a>
+        <a class="nav-item nav-link" [routerLink]="['/checkout']"  *ngIf="auth.loggedIn()" >Checkout</a>
+        <a class="nav-item nav-link" (click)="auth.login()" *ngIf="!auth.loggedIn()">Login</a>
+        <a class="nav-item nav-link" (click)="auth.logout()" *ngIf="auth.loggedIn()" >Logout</a>
+      </div>
+
+      <div class="nav navbar-nav  float-xs-right">
+        <db-cart-menu  *ngIf="auth.loggedIn()" ></db-cart-menu>
+      </div>
+
+    </div>
+  </div>
+</nav>

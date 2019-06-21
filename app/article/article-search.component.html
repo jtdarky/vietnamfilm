@@ -1,0 +1,12 @@
+<div class="card">
+    <div class="card-header">Article Search</div>
+    <div class="input-group">
+        <input #search type="text" class="form-control" placeholder="Search for..."
+               [formControl]="searchControl">
+        <span class="input-group-btn">
+            <button class="btn btn-secondary" type="button"
+                    [disabled]="disabled"
+                    (click)="searchArticle(search.value)">Go!</button>
+        </span>
+    </div>
+</div>

@@ -1,0 +1,38 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <img class="center-block article-img" src="{{article.imageL}}" alt="{{article.title}}">
+        </div>
+        <br>
+        <div class="col-md-12">
+            <div class="card">
+                <div class="card-block">
+                    <div class="card-header text-center">
+                        <h2 class="card-title flex-items-md-center">{{article.title}}</h2>
+                        <h3>{{article.director}}</h3>
+                        <h2>{{article.rating}}</h2>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-md-12">
+            <div class="card">
+                <div class="card-header text-center">
+                    <h2>Film Information</h2>
+                </div>
+                <div class="card-block">
+                    <h3>Basic Plot</h3>
+                    <p class="card-text">{{article.plot}}</p>
+
+                    <h3>Production Information</h3>
+                    <p class="card-text">{{article.production}}</p>
+
+                    <h3>Author opinion</h3>
+                    <p class="card-text">{{article.opinion}}</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

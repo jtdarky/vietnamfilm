@@ -1,0 +1,16 @@
+<div class="card-deck-wrapper">
+    <div class="card-deck">
+        <div class="card" *ngFor="let director of directors">
+            <div class="card-header text-xs-center">
+                {{director.title}}
+            </div>
+            <img class="card-img-top center-block director-item" src="{{director.imageS}}" alt="{{director.title}}">
+            <div class="card-footer text-xs-center">
+                <a class="btn btn-secondary" [routerLink]="['/film', director.id]">More Info</a>
+            </div>
+            <div class="card-block">
+                <p class="card-text">{{director.description}}</p>
+            </div>
+        </div>
+    </div>
+</div>

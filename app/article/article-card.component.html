@@ -1,0 +1,16 @@
+<div class="card-deck-wrapper">
+    <div class="card-deck">
+        <div class="card" *ngFor="let article of articles">
+            <div class="card-header text-xs-center">
+                {{article.title}}
+            </div>
+            <img class="card-img-top center-block article-item" src="{{article.imageS}}" alt="{{article.title}}">
+            <div class="card-footer text-xs-center">
+                <a class="btn btn-secondary" [routerLink]="['/film', article.id]">More Info</a>
+            </div>
+            <div class="card-block">
+                <p class="card-text">{{article.description}}</p>
+            </div>
+        </div>
+    </div>
+</div>
